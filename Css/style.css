@@ -1,0 +1,364 @@
+body{
+font-family:Arial;
+background:#111;
+color:white;
+transition:0.3s;
+}
+
+/* glass navbar */
+
+.glass-nav{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+}
+
+/* hero */
+
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(#0008,#0008);
+}
+
+.logo{
+width:35px;
+margin-right:8px;
+}
+
+/* .logo-box{
+display:flex;
+align-items:center;
+font-weight:bold;
+font-size:20px;
+} */
+
+.hero h1{
+font-size:4rem;
+animation:fadeUp 1s;
+}
+
+/* TRAINER SECTION */
+
+.trainer-section{
+padding:80px 0;
+}
+
+.trainer-slider{
+display:flex;
+gap:30px;
+overflow-x:auto;
+padding:20px 10px;
+scroll-behavior:smooth;
+}
+
+.trainer-card{
+min-width:260px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+border-radius:15px;
+padding:20px;
+text-align:center;
+transition:all .4s ease;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.trainer-card img{
+width:100%;
+height:300px;
+object-fit:contain;
+background-position: center;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.trainer-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+
+.show-more{
+margin-top:10px;
+border:none;
+padding:8px 16px;
+border-radius:20px;
+background:#ff4b2b;
+color:white;
+transition:.3s;
+}
+
+.show-more:hover{
+transform:scale(1.1);
+}
+
+.extra-info{
+max-height:0;
+overflow:hidden;
+transition:0.4s;
+}
+
+.extra-info.show{
+max-height:100px;
+}
+
+/* BOOKING SECTION */
+
+.booking{
+padding:80px 0;
+text-align:center;
+}
+
+.booking h2{
+margin-bottom:30px;
+}
+
+#bookingForm{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:15px;
+max-width:600px;
+margin:auto;
+box-shadow:0 10px 40px rgba(0,0,0,.4);
+}
+
+#bookingForm input,
+#bookingForm select{
+padding:10px;
+border:none;
+border-radius:8px;
+width:180px;
+}
+
+#bookingForm button{
+padding:10px 20px;
+border:none;
+border-radius:25px;
+background:#ff4b2b;
+color:white;
+transition:.3s;
+}
+
+#bookingForm button:hover{
+transform:scale(1.1);
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+
+-------------------
+/* SECTION ANIMATION */
+
+.bmi,
+.booking,
+.trainer-section{
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* dark mode */
+
+.dark{
+background:#fff;
+color:#000;
+}
+
+/* animations */
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1}
+}
+
+/* ABOUT HERO */
+
+.about-hero{
+padding:120px 0;
+background:linear-gradient(120deg,#111,#1c1c1c);
+color:white;
+text-align:center;
+}
+
+.about-hero h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+/* STORY IMAGE */
+
+.story-img{
+border-radius:15px;
+transition:transform 0.4s;
+}
+
+.story-img:hover{
+transform:scale(1.05);
+}
+
+/* FEATURE CARDS */
+
+.feature-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+}
+
+.feature-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* GALLERY */
+
+.gallery-img{
+width:100%;
+border-radius:12px;
+transition:0.4s;
+}
+
+.gallery-img:hover{
+transform:scale(1.08) rotate(1deg);
+}
+
+/* CTA */
+
+.cta-section{
+padding:80px;
+background:linear-gradient(120deg,#ff4b2b,#ff416c);
+color:white;
+}
+
+.btn-main{
+background:white;
+color:black;
+padding:10px 20px;
+border-radius:25px;
+transition:0.3s;
+}
+
+.btn-main:hover{
+transform:scale(1.1);
+}
+
+/* CONTACT HERO */
+
+.contact-hero{
+padding:120px 0;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("/website-project/images/gym1.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+}
+
+.contact-hero h1{
+font-size:3rem;
+margin-bottom:15px;
+animation:fadeUp 1s;
+}
+
+/* CONTACT INFO */
+
+.contact-info{
+margin-top:60px;
+margin-bottom:60px;
+}
+
+.info-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.info-card:hover{
+transform:translateY(-8px) scale(1.05);
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* CONTACT FORM */
+
+.contact-form-section{
+margin-bottom:80px;
+}
+
+.contact-img{
+border-radius:15px;
+transition:0.4s;
+}
+
+.contact-img:hover{
+transform:scale(1.05);
+}
+
+.contact-form{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:35px;
+border-radius:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+outline:none;
+box-shadow:0 0 10px rgba(255,255,255,0.3);
+}
+
+/* MAP */
+
+.map-container{
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+
+.footer{
+padding:20px;
+background:#111;
+color:#aaa;
+margin-top:50px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
